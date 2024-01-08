@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<h1>Trail System Login</h1>
+<div class="login-container">
+    <form asp-controller="SignIn" asp-action="Index" method="post">
+        <input type="text" class="login-input" placeholder="Email" id="email" name="email"><Br></Br>
+        <input type="password" class="login-input" placeholder="Password" id="password" name="password"><Br></Br>
+        <button class="login-button">Login</button>
+    </form>
+</div>

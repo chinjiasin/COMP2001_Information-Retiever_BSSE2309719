@@ -1,0 +1,23 @@
+﻿@model Profile
+@{
+    ViewData["Title"] = "Profile";
+}
+<h1>@ViewData["Title"]</h1>
+<form asp-action="Update" method="post">
+    <label for="username">Username:</label>
+    <br>
+    <input type="text" id="ProfileName" name="ProfileName" value="@Model.ProfileName">
+    <br>
+    <label for="contact">Contact:</label>
+    <br>
+    <input type="text" id="UserContact" name="UserContact" value="@Model.UserContact">
+    <br>
+
+    <label for="Bio">Bio:</label>
+    <br>
+    <input type="text" id="Bio" name="Bio" value="@Model.Bio">
+    <br>
+
+    <input type="submit" value="Submit">
+    <a href="/profile/logout">Log Out</a>
+</form>
